@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:myapp1/demo/basic_demo.dart';
-import 'package:myapp1/demo/drawer-demo.dart';
-import 'package:myapp1/demo/layout-demo.dart';
-import 'package:myapp1/demo/listview-demo.dart';
-import 'package:myapp1/demo/sliver_demo.dart';
-import 'package:myapp1/demo/view-demo.dart';
+import 'package:myapp1/demo/form_demo.dart';
+import 'package:myapp1/demo/material_components.dart';
 
+import 'demo/basic_demo.dart';
 import 'demo/bottom-navation-bar-demo.dart';
+import 'demo/drawer-demo.dart';
+import 'demo/layout-demo.dart';
+import 'demo/listview-demo.dart';
+import 'demo/navigator_demo.dart';
+import 'demo/sliver_demo.dart';
+import 'demo/view-demo.dart';
 
 void main() => runApp(App());
 
@@ -16,11 +19,20 @@ class App extends StatelessWidget {
     Widget build(BuildContext context) {  // Widget 为返回的类型是一个Widget,
     return MaterialApp(
       debugShowCheckedModeBanner: false,  // 取消banner右上角debugger显示
-      home: Home(),
+//      home: Home(),
+      initialRoute: '/mdc',  // 若没有添加home属性则会显示初始化路由地址的页面
+      routes: {
+        '/': (context) => Home(),
+        '/route': (context) => NavigatorDemo(),
+        '/about': (context) => Pages(title: 'About',),
+        '/form': (context) => FormDemo(),
+        '/mdc': (context) => MaterialComponents()
+      },
       theme: ThemeData(  // 设置主题
         primarySwatch:  Colors.yellow,
         highlightColor: Color.fromRGBO(255, 2555, 255, 0.5), // 按下按钮立即显示的水波纹的背景颜色
-        splashColor: Colors.white70 //  按下按钮水波纹的颜色
+        splashColor: Colors.white70, //  按下按钮水波纹的颜色
+        accentColor: Color.fromRGBO(3, 54, 255, 1.0)
       ),
     );
   }
@@ -73,5 +85,16 @@ class Home extends StatelessWidget {
   }
 }
 
+class test extends StatefulWidget {
+  @override
+  _testState createState() => _testState();
+}
+
+class _testState extends State<test> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
 
 
