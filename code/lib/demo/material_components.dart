@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:myapp1/demo/alert-dialog.dart';
+import 'package:myapp1/demo/bottom-sheet-demo.dart';
 import 'package:myapp1/demo/button-demo.dart';
 import 'package:myapp1/demo/checkbox-demo.dart';
 import 'package:myapp1/demo/datetime-demo.dart';
+import 'package:myapp1/demo/expansion-panel-demo.dart';
 import 'package:myapp1/demo/floating-action-button-demo.dart';
 import 'package:myapp1/demo/form_demo.dart';
 import 'package:myapp1/demo/popup-menu-button-demo.dart';
 import 'package:myapp1/demo/radio-demo.dart';
+import 'package:myapp1/demo/simple-dialog-demo.dart';
 import 'package:myapp1/demo/slider-demo.dart';
+import 'package:myapp1/demo/snack-bar-demo.dart';
 import 'package:myapp1/demo/switch-demo.dart';
 
 class MaterialComponents extends StatelessWidget {
@@ -19,6 +24,11 @@ class MaterialComponents extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(title: 'ExpansionPanelDemo',page: ExpansionPanelDemo()),
+          ListItem(title: 'SnackBarDemo',page: SnackBarDemo()),
+          ListItem(title: 'BottomSheet',page: BottomSheetDemo()),
+          ListItem(title: 'AlertDialog',page: AlertDialogDemo()),
+          ListItem(title: 'SimpleDialog',page: SimpleDialogDemo()),
           ListItem(title: 'DateTime',page: DateTimeDemo()),
           ListItem(title: 'Slider',page: SliderDemo()),
           ListItem(title: 'Switch',page: SwitchDemo()),

@@ -1,4 +1,4 @@
-#Mon Aug 31 22:58:08 CST 2020
+#Tue Sep 01 18:21:49 CST 2020
 base.0=/Users/yanqiang/Documents/flutter/study/flutter-study/code/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
