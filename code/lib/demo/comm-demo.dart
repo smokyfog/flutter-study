@@ -8,13 +8,6 @@ class SimpleDialogDemo extends StatefulWidget {
 }
 
 class _SimpleDialogDemoState extends State<SimpleDialogDemo> {
-  int _radioGroupA = 0;
-
-  void _handleRadioValueChanged(int value) {
-    setState(() {
-      _radioGroupA = value;
-    });
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -41,7 +41,6 @@ class _ExpansionPanelDemoState extends State<ExpansionPanelDemo> {
             padding: EdgeInsets.all(16.0),
             width: double.infinity,
             child: Text('Content for Pannel B.'),
-
           ),
           isExpanded: false
       ),
@@ -51,7 +50,6 @@ class _ExpansionPanelDemoState extends State<ExpansionPanelDemo> {
             padding: EdgeInsets.all(16.0),
             width: double.infinity,
             child: Text('Content for Pannel .'),
-
           ),
           isExpanded: false
       ),
