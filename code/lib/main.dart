@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:myapp1/demo/bloc/bloc-demo.dart';
 import 'package:myapp1/demo/form_demo.dart';
+import 'package:myapp1/demo/http/http-demo.dart';
 import 'package:myapp1/demo/material_components.dart';
+import 'package:myapp1/demo/rxdart/rxdart-demo.dart';
+import 'package:myapp1/demo/state/scoped-model.dart';
+import 'package:myapp1/demo/state/state-management-demo.dart';
+import 'package:myapp1/demo/stream/stream-demo.dart';
 
 import 'demo/basic_demo.dart';
 import 'demo/bottom-navation-bar-demo.dart';
@@ -20,13 +26,19 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,  // 取消banner右上角debugger显示
 //      home: Home(),
-      initialRoute: '/mdc',  // 若没有添加home属性则会显示初始化路由地址的页面
+      initialRoute: '/http',  // 若没有添加home属性则会显示初始化路由地址的页面
       routes: {
         '/': (context) => Home(),
         '/route': (context) => NavigatorDemo(),
         '/about': (context) => Pages(title: 'About',),
         '/form': (context) => FormDemo(),
-        '/mdc': (context) => MaterialComponents()
+        '/mdc': (context) => MaterialComponents(),
+        '/state-management': (context) => StateManagementDemo(),
+        '/scoped-model': (context) => ScopedModelDemo(),
+        '/stream': (context) => StreamDemo(),
+        '/rxdart': (context) => RxDartDemo(),
+        '/bloc': (context) => BlocDemo(),
+        '/http': (context) => HttpDemo(),
       },
       theme: ThemeData(  // 设置主题
         primarySwatch:  Colors.yellow,

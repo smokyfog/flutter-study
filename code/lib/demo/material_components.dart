@@ -16,6 +16,7 @@ import 'package:myapp1/demo/radio-demo.dart';
 import 'package:myapp1/demo/simple-dialog-demo.dart';
 import 'package:myapp1/demo/slider-demo.dart';
 import 'package:myapp1/demo/snack-bar-demo.dart';
+import 'package:myapp1/demo/state/scoped-model.dart';
 import 'package:myapp1/demo/stepper-demo.dart';
 import 'package:myapp1/demo/switch-demo.dart';
 
